@@ -112,14 +112,15 @@ body {
   align-items: center;
   width: 350px;
   height: 510px;
-  border: 1px solid red;
+  /* border: 6px solid #F5F5F5; */
+  /* border: 1px solid RED; */
   border-radius: 8px;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   margin: 2rem 0; /* Just while build card backside - above and below */
   background-color: #FFF;
   color: var(--color3);
-  /* box-shadow: 22.85714340209961px 21.428571701049805px 94.28572082519531px 0px #0000001A; */
+  box-shadow: 22.85714340209961px 21.428571701049805px 94.28572082519531px 0px #0000001A;
 }
 
 /* this has been updated to target the inner img not the wrapper */
@@ -188,19 +189,29 @@ body {
 
 /* BACK OF CARD */
 
+
 /* .card-back-btn some properties can probably be removed - card having flex is causing button to be centered */
+
 .card-back-btn {
   color: #FFF;
   background-color: var(--color1);
   border: none;
-  width: 38px; /* +10px increased width and height compared to figma design */
-  height: 38px;
+  width: 42px; /* +10px increased width and height compared to figma design */
+  height: 42px;
   border-radius: 100%;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 800;
   margin: 20px 0 0 20px;
   align-self: flex-start;
   padding: 0; /* resets default / user agent btn padding affecting computed size */
+  position: relative;
+}
+
+.card-back-btn span {
+  position: absolute; /* consider replacing this with an icon instead of unicode later */
+  top: -3px;
+  left: 7px;
+  color: #FFF;
 }
 
 .barcode-wrapper img {
@@ -210,6 +221,12 @@ body {
   border-radius: 7px;
   box-shadow: 3.4688737392425537px 3.4688737392425537px 10.406620979309082px 0px #00000012; /*refactor by rounding ?? */
   margin-bottom: 12px;
+}
+
+.card--back__text-wrapper {
+  margin: 12px 10px 0 28px;
+  /* margin-top: 12px;
+  margin-left: 28px; */
 }
 
 .card--back__main-heading-price {
@@ -222,11 +239,6 @@ body {
   font-family: Playfair Display;
   font-size: 20px;
   font-weight: 700;
-}
-
-.card--back__text-wrapper {
-  margin-top: 12px;
-  margin-left: 28px;
 }
 
 .card--back__sub-title {
