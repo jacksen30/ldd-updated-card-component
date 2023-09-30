@@ -60,7 +60,7 @@ select {
   font: inherit;
 }
 
-/* sr-only is for screen reader use only - 
+/* sr-only is for screen reader use only -
 The element will be visually hidden but will still be read by screen reader technology. */
 .sr-only {
   position: absolute;
@@ -76,9 +76,9 @@ The element will be visually hidden but will still be read by screen reader tech
   z-index: -1;
   text-indent: -9999px;
 }
-  
-/*  A big shout out to Andy Bell at https://andy-bell.co.uk/about/ 
-    For his great article " A Modern CSS Reset " I recommend giving it a read at https://andy-bell.co.uk/a-modern-css-reset/ 
+
+/*  A big shout out to Andy Bell at https://andy-bell.co.uk/about/
+    For his great article " A Modern CSS Reset " I recommend giving it a read at https://andy-bell.co.uk/a-modern-css-reset/
 */
 
 
@@ -110,10 +110,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 350px;
   height: 510px;
-  /* border: 6px solid #F5F5F5; */
-  /* border: 1px solid RED; */
   border-radius: 8px;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
@@ -121,6 +120,19 @@ body {
   background-color: #FFF;
   color: var(--color3);
   box-shadow: 22.85714340209961px 21.428571701049805px 94.28572082519531px 0px #0000001A;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card--front,
+.card--back {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  background-color: #FFF;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 8px; /* Added as card rear / backface top corners were losing radius from card class ? */
 }
 
 /* this has been updated to target the inner img not the wrapper */
@@ -141,7 +153,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-  
 }
 
 .card__title {
@@ -187,12 +198,24 @@ body {
   font-weight: 700;
 }
 
+.card .card--back {
+  transform: rotateY(180deg);
+}
+
+/* Styles for flipped cards */
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
 /* BACK OF CARD */
 
 
 /* .card-back-btn some properties can probably be removed - card having flex is causing button to be centered */
 
 .card-back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #FFF;
   background-color: var(--color1);
   border: none;
@@ -207,11 +230,14 @@ body {
   position: relative;
 }
 
+/* consider unicode later with a icon !! */ /* currently div not span */
 .card-back-btn span {
-  position: absolute; /* consider replacing this with an icon instead of unicode later */
-  top: -3px;
+  position: absolute;
+  top: 0;
   left: 7px;
   color: #FFF;
+  width: 40px;
+  height: 40px;
 }
 
 .barcode-wrapper img {
@@ -225,8 +251,6 @@ body {
 
 .card--back__text-wrapper {
   margin: 12px 10px 0 28px;
-  /* margin-top: 12px;
-  margin-left: 28px; */
 }
 
 .card--back__main-heading-price {
@@ -257,8 +281,8 @@ body {
 }
 
 
-/* 
+/*
 font-family: 'Abril Fatface', cursive;
 font-family: 'Playfair Display', serif;
-font-family: 'Urbanist', sans-serif; 
+font-family: 'Urbanist', sans-serif;
 */
