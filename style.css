@@ -116,7 +116,6 @@ body {
   border-radius: 8px;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  margin: 2rem 0; /* Just while build card backside - above and below */
   background-color: #FFF;
   color: var(--color3);
   box-shadow: 22.85714340209961px 21.428571701049805px 94.28572082519531px 0px #0000001A;
