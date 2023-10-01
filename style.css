@@ -295,6 +295,9 @@ body {
   z-index: 2;
 }
 
+.toggle-button {
+  touch-action: manipulation;
+}
 /*
 font-family: 'Abril Fatface', cursive;
 font-family: 'Playfair Display', serif;
