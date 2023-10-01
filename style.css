@@ -279,6 +279,21 @@ body {
   margin-top: 1px;
 }
 
+.card--front {
+  z-index: 2;
+}
+
+.card--back {
+  z-index: 1;
+}
+
+.card.is-flipped .card--front {
+  z-index: 1;
+}
+
+.card.is-flipped .card--back {
+  z-index: 2;
+}
 
 /*
 font-family: 'Abril Fatface', cursive;
