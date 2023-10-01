@@ -229,16 +229,6 @@ body {
   position: relative;
 }
 
-/* consider unicode later with a icon !! */ /* currently div not span */
-.card-back-btn span {
-  position: absolute;
-  top: 0;
-  left: 7px;
-  color: #FFF;
-  width: 40px;
-  height: 40px;
-}
-
 .barcode-wrapper img {
   width: 162px;
   padding: 12px;
