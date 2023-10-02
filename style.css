@@ -197,10 +197,6 @@ body {
   font-weight: 700;
 }
 
-.extramargin {
-  margin-top: 200px;
-}
-
 .card .card--back {
   transform: rotateY(180deg);
 }
@@ -231,6 +227,7 @@ body {
   align-self: flex-start;
   padding: 0; /* resets default / user agent btn padding affecting computed size */
   position: relative;
+  z-index: 100;
 }
 
 .barcode-wrapper img {
