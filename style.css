@@ -241,6 +241,7 @@ body {
   font-weight: 800;
   margin: 20px 0 0 20px;
   padding: 0; /* resets default / user agent btn padding affecting computed size */
+  align-self: flex-start;
 }
 
 .barcode-wrapper img {
