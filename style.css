@@ -197,6 +197,10 @@ body {
   font-weight: 700;
 }
 
+.extramargin {
+  margin-top: 200px;
+}
+
 .card .card--back {
   transform: rotateY(180deg);
 }
