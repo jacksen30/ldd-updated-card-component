@@ -282,6 +282,10 @@ body {
   display: none;
 }
 
+.toggle-button {
+  touch-action: manipulation;
+}
+
 /* .card.is-flipped .card--back {
   z-index: 2;
 }
