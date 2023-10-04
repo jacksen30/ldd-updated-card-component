@@ -270,9 +270,9 @@ body {
 }
 
 
-.card.is-flipped .card--front {
+/* .card.is-flipped .card--front {
   display: none;
-}
+} */
 
 /*
 font-family: 'Abril Fatface', cursive;
