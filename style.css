@@ -212,6 +212,8 @@ body {
 /* .card-back-btn some properties can probably be removed - card having flex is causing button to be centered */
 
 .card-back-btn {
+  position: absolute;
+  left: 5px;
   color: #FFF;
   background-color: var(--color1);
   border: none;
