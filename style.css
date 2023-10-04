@@ -222,9 +222,9 @@ body {
   font-weight: 800;
   margin: 20px 0 0 20px;
   padding: 0; /* resets default / user agent btn padding affecting computed size */
-  /* align-self: flex-start; */ /* THIS PROPERTY WAS AFFECTING JS FLIP FUNCTION */
-  position: absolute; /* used instead of align self */
-  left: 5px;
+  align-self: flex-start; /* THIS PROPERTY WAS AFFECTING JS FLIP FUNCTION */
+  /*position: absolute; */ /* used instead of align self */
+  /* left: 5px; */
 }
 
 .barcode-wrapper img {
@@ -280,9 +280,9 @@ body {
   display: none;
 }
 
-.toggle-button {
+/* .toggle-button {
   touch-action: manipulation;
-}
+} */
 
 /* .card.is-flipped .card--back {
   z-index: 2;
