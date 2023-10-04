@@ -212,8 +212,6 @@ body {
 /* .card-back-btn some properties can probably be removed - card having flex is causing button to be centered */
 
 .card-back-btn {
-  position: absolute;
-  left: 5px;
   color: #FFF;
   background-color: var(--color1);
   border: none;
@@ -270,29 +268,11 @@ body {
   margin-top: 1px;
 }
 
-/* .card--front {
-  z-index: 2;
-}
-
-.card--back {
-  z-index: 1;
-} */
 
 .card.is-flipped .card--front {
   display: none;
 }
 
-/* .toggle-button {
-  touch-action: manipulation;
-} */
-
-/* .card.is-flipped .card--back {
-  z-index: 2;
-}
-
-.toggle-button {
-  touch-action: manipulation;
-} */
 /*
 font-family: 'Abril Fatface', cursive;
 font-family: 'Playfair Display', serif;
