@@ -222,7 +222,7 @@ body {
   font-weight: 800;
   margin: 20px 0 0 20px;
   padding: 0; /* resets default / user agent btn padding affecting computed size */
-  align-self: flex-start; /* THIS PROPERTY WAS AFFECTING JS FLIP FUNCTION */
+  /* align-self: flex-start; */ /* THIS PROPERTY WAS AFFECTING JS FLIP FUNCTION */
   /*position: absolute; */ /* used instead of align self */
   /* left: 5px; */
 }
