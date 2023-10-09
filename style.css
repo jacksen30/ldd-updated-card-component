@@ -225,8 +225,7 @@ body {
   /* align-self: flex-start; */ /* THIS PROPERTY WAS AFFECTING JS FLIP FUNCTION */
   position: absolute; /* used instead of align self */
   left: 5px;
-  z-index: 100000;
-  pointer-events: auto;
+
 }
 
 .barcode-wrapper img {
