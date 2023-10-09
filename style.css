@@ -130,6 +130,7 @@ body {
   align-items:  center;
   background-color: #FFF;
   position: absolute;
+  -webkit-backface-visibility: hidden; /* for Safari */
   backface-visibility: hidden;
   border-radius: 8px; /* Added as card rear / backface top corners were losing radius from card class ? */
 }
