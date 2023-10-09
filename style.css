@@ -73,7 +73,7 @@ The element will be visually hidden but will still be read by screen reader tech
   white-space: nowrap;
   border: 0;
   display: none;
-  z-index: -1;
+  z-index: -1000;
   text-indent: -9999px;
 }
 
@@ -196,6 +196,14 @@ body {
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.card.is-flipped .card--front {
+  z-index: -1;
+}
+
+.card.is-flipped .card--back {
+  z-index: 1;
 }
 
 .card .card--back {
